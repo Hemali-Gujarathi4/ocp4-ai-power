@@ -144,6 +144,8 @@ module "config_ocp" {
   release_image_override     = var.release_image_override
   private_network_mtu        = var.private_network_mtu
   fips_compliant             = var.fips_compliant
+  tech_preview               = var.tech_preview
+  os_image_stream            = var.os_image_stream
   log_level                  = var.installer_log_level
   rhcos_pre_kernel_options   = var.rhcos_pre_kernel_options
   rhcos_kernel_options       = var.rhcos_kernel_options

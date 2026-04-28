@@ -125,6 +125,8 @@ module "config_ocp" {
   cluster_domain                 = module.nodes.cluster_domain
   cluster_id                     = local.cluster_id
   fips_compliant                 = var.fips_compliant
+  tech_preview                   = var.tech_preview
+  os_image_stream                = var.os_image_stream
   dns_forwarders                 = var.dns_forwarders
   gateway_ip                     = module.bastion.gateway_ip
   cidr                           = module.bastion.cidr

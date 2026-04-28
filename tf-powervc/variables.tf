@@ -386,6 +386,18 @@ variable "fips_compliant" {
   default     = false
 }
 
+variable "tech_preview" {
+  type        = string
+  description = "Enable tech preview features (acts as boolean, intentionally a string). Valid values: 'true', 'false', '' (empty = disabled)"
+  default     = ""
+}
+
+variable "os_image_stream" {
+  type        = string
+  description = "Set OS image stream for RHEL-based RHCOS. Valid values: 'rhel-10', 'rhel-9', '' (empty = use default). Only applies when tech_preview is enabled."
+  default     = ""
+}
+
 variable "dns_forwarders" {
   default = "8.8.8.8"
 }
