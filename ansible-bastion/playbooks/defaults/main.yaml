@@ -28,6 +28,13 @@ proxy_url: ""
 no_proxy: "127.0.0.1,{{ dhcp.subnet }},10.0.0.0/8,192.168.0.0/16"
 # set fips mode
 fips_compliant: false
+# enable tech preview features (acts as boolean, intentionally a string)
+# valid values: "true", "false", "" (empty string means disabled)
+tech_preview: ""
+# set OS image stream for RHEL-based RHCOS
+# valid values: "rhel-10", "rhel-9", "" (empty string means use default)
+# only applies when tech_preview is enabled
+os_image_stream: ""
 # storage_type could be: "" or "nfs"
 storage_type: ""
 ########################

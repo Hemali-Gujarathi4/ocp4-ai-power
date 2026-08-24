@@ -85,6 +85,8 @@ variable "pull_secret" {}
 
 variable "release_image_override" {}
 variable "fips_compliant" {}
+variable "tech_preview" { default = "" }
+variable "os_image_stream" { default = "" }
 
 variable "private_network_mtu" {}
 

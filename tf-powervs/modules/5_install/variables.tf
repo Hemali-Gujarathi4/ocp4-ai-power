@@ -69,6 +69,8 @@ variable "openshift_install_tarball" {}
 variable "public_key" {}
 variable "pull_secret" {}
 variable "release_image_override" {}
+variable "tech_preview" { default = "" }
+variable "os_image_stream" { default = "" }
 
 variable "private_network_mtu" {}
 

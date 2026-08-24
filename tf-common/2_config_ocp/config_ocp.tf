@@ -112,6 +112,8 @@ locals {
     release_image_override     = var.enable_local_registry ? local.local_registry_ocp_image : var.release_image_override
     enable_local_registry      = var.enable_local_registry
     fips_compliant             = var.fips_compliant
+    tech_preview               = var.tech_preview
+    os_image_stream            = var.os_image_stream
     node_connection_timeout    = 60 * var.connection_timeout
     rhcos_pre_kernel_options   = var.rhcos_pre_kernel_options
     rhcos_kernel_options       = var.rhcos_kernel_options
